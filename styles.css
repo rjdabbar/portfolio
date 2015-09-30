@@ -1,4 +1,4 @@
-html, body, main, h1, p, section, div, article, ul, li {
+html, body, main, h1, p, section, div, article, ul, li, a {
   border: 0;
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ ul {
 
 img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 body {
@@ -81,6 +81,10 @@ p#bio {
 
 /* PROJECTS STYLING */
 
+section.projects {
+  background: #90CDD4;
+}
+
 h1.projects {
   font-weight: bold;
   font-size: 36px;
@@ -89,24 +93,71 @@ h1.projects {
 
 article.project {
   margin: 10px 0;
-  border: 1px solid grey;
+  border: 5px solid grey;
   padding: 20px;
 }
 
-img.project {
+div.image {
   width: 196px;
   height: 196px;
+  position: relative;
   border: 2px solid black;
   float: left;
 }
 
+div.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  text-align: center;
+}
+
+div.overlay > a {
+  font-size: 24px;
+  color: white;
+  text-decoration: underline;
+}
+
+div.image:hover div.overlay {
+  display: block;
+  opacity: 1;
+}
 
 p.project-info {
   margin-left: 20px;
   width: 600px;
   float: left;
+  font-size: 24px;
 }
 
-article.project:nth-of-type(even) img.project {
+article.project:nth-of-type(even) div.image {
   float:right
+}
+
+/* SKILLS STYLINGS*/
+
+h1.skills {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+li.skill {
+  display: block;
+  float: left;
+  font-size: 93px;
+  margin: 0 20px 0 30px;
+}
+
+/* CONTACT STYLING */
+
+section.contact {
+  background: black;
+  color: white;
 }
