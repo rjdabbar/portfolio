@@ -31,11 +31,6 @@ body {
   clear: both;
 }
 
-/*main {
-  width: 900px;
-  margin: 0 auto;
-}*/
-
 section {
   padding: 50px 0;
   border-bottom: 2px solid black;
@@ -52,10 +47,20 @@ div.container {
 
 /*HEADER*/
 header {
-  height: 50px;
+  height: auto;
   display: block;
   background: black;
   width: 100%;
+}
+
+ul.header {
+  color: white;
+  padding: 20px;
+}
+
+ul.header > li {
+  float: left;
+  margin: 10px 0 0 20px;;
 }
 
 /* ABOUT ME STYLE */
@@ -160,4 +165,13 @@ li.skill {
 section.contact {
   background: black;
   color: white;
+}
+
+ul.contact {
+
+}
+
+ul.contact > li {
+  float: left;
+  margin-left: 20px;
 }
