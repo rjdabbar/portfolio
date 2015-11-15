@@ -21,7 +21,7 @@ img {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   background: #f3f3f3;
 }
 
@@ -74,7 +74,7 @@ img#portrait {
 
 h1.title {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 52px;
   float:left;
   margin: 100px 0 0 100px;
 }
